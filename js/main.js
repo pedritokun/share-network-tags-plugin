@@ -11,7 +11,7 @@
 	           term  : request.term,
 	        },
 	        success: function( data ) {
-	           $( 'input.suggest-user' ).removeClass( 'ui-autocomplete-loading' );  
+	           $( 'input.suggest-user' ).removeClass( 'ui-autocomplete-loading' ); 
 	           response(data);
 	        },
 	        error: function( data ) {            	
@@ -26,9 +26,9 @@
 		    if( '' != term && 'null' != term ){
 		    	$('.tagsdiv .newtag').val(term);
 		        $('.tagadd').trigger('click');	
+
 		    }
 		    
 		}
 	});
-
 })(jQuery);
